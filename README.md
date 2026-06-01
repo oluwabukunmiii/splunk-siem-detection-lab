@@ -39,7 +39,7 @@ This repository contains a security monitoring and log analysis lab built to dem
 
 ## 🚀 How to Use This Lab
 1. *Ingest the Logs:* Upload the log samples from the /logs directory into your local Splunk instance.This is the sample of thge logs I ingested
-    *2026-04-05 10:05:11 LOGIN FAILED user=admin ip=192.168.1.10
+    2026-04-05 10:05:11 LOGIN FAILED user=admin ip=192.168.1.10
     2026-04-05 10:06:15 LOGIN SUCCESS user=john ip=192.168.1.15
     2026-04-05 10:07:18 FILE UPLOAD user=john file=project2.zip
     2026-04-05 10:08:28 FILE DOWNLOAD user=sarah file=report.pdf
