@@ -7,8 +7,10 @@ This repository contains a security monitoring and log analysis lab built to dem
 
 ## 📁 Repository Structure
 * */logs* - Contains sanitized tracking artifacts from simulated network and system incidents.
-* */queries* - Houses optimized Splunk SPL scripts designed to trigger alerts on anomalous data.
-* */documentation* - Includes detailed reports, screenshots of active dashboards, and visualization alerts.
+* /dection queries* - contain the detection querry
+* /bruteforce queries* - contain the bruteforce detection querry
+* /file activity monitoring* - contain the file activity monitoring querry
+* */screenshots* 
 
 ---
 
