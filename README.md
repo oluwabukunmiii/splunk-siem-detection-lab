@@ -45,19 +45,19 @@ This repository contains a security monitoring and log analysis lab built to dem
     2026-04-05 10:08:28 FILE DOWNLOAD user=sarah file=report.pdf
  
 2. *Execute Queries:* Copy the tailored search strings from the /queries folder and run them inside the Splunk Search & Reporting application.
-      *Bruteforce Querries
+      *Bruteforce Querries:  
    index=main "LOGIN FAILED" rex "user = (?<user>/5+)"
    | rex "ip = (?<ip>/5+)"
    | stats count by user ip where count >=1
    | sort = count
 
-      *Dectection Querries
+      *Dectection Querries:
    index=main "LOGIN PASSED" rex "user = (?<user>/5+)"
    | rex "ip = (?<ip>/5+)"
    |stats count by user ip
    | sort - count
 
-     *Files activity monitoring
+     *Files activity monitoring:
    index=main ("FILE DOWNLOADED" OR "FILE UPLOAD" OR "FILE DELETION") rex "user = (?<user>/5+)"
    | rex "file = (?<file>/5+)"
    | stats count by user file
